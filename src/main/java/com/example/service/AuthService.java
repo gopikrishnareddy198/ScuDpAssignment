@@ -4,7 +4,6 @@ import com.example.entity.JwtResponse;
 import com.example.entity.SigninRequest;
 import com.example.entity.SignupRequest;
 import com.example.entity.User;
-import com.example.repo.UserRepository;
 import com.example.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -37,6 +36,10 @@ public class AuthService {
         UserDetails user = (UserDetails) auth.getPrincipal();
         String token = jwtUtil.generateToken(user);
         return new JwtResponse(token);
+    }
+
+    public static void main(String[] args) {
+
     }
 }
 
