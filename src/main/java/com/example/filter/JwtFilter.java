@@ -42,5 +42,9 @@ public class JwtFilter extends OncePerRequestFilter {
         }
         chain.doFilter(request, response);
     }
+
+protected void doFilterInternal1(HttpServletRequest request, HttpServletResponse response, FilterChain chain) {
+
+}
 }
 
