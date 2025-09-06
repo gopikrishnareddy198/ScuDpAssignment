@@ -44,7 +44,7 @@ public class JwtFilter extends OncePerRequestFilter {
     }
 
 protected void doFilterInternal1(HttpServletRequest request, HttpServletResponse response, FilterChain chain) {
-
+ int x, y = 0;
 }
 }
 
